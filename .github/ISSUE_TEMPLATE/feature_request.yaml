@@ -1,0 +1,43 @@
+name: Feature request
+description: Suggest an idea for this project.
+labels: ['enhancement']
+body:
+  - type: textarea
+    id: problem-related
+    attributes:
+      label: What problem does this solve?
+      description: A clear and concise description of what the problem is.
+      placeholder: I'm always frustrated when ...
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Describe the solution you'd like.
+      description: A clear and concise description of what you want to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Describe alternatives you've considered.
+      description: A clear and concise description of any alternative solutions or features you've considered.
+      placeholder: Choosing other approach wouldn't work, because ...
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context.
+      description: Any other relevant information, screenshots or resources.
+      placeholder: This would work only when ...
+    validations:
+      required: false
+  - type: textarea
+    id: risk
+    attributes:
+      label: Are there any risks associated with this feature?
+      description: A clear and concise description of any risks associated with this feature.
+      placeholder: Data integrity is a risk, because ...
+    validations:
+      required: true
