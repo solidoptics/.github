@@ -5,30 +5,30 @@ body:
   - type: textarea
     id: problem-related
     attributes:
-      label: What problem does this solve?
-      description: A clear and concise description of what the problem is.
+      label: Problem statement
+      description: What problem does this feature solve? A clear and concise description of what the problem is.
       placeholder: I'm always frustrated when ...
     validations:
       required: true
   - type: textarea
     id: solution
     attributes:
-      label: Describe the solution you'd like.
+      label: Solution
       description: A clear and concise description of what you want to happen.
     validations:
       required: true
   - type: textarea
     id: alternatives
     attributes:
-      label: Describe alternatives you've considered.
-      description: A clear and concise description of any alternative solutions or features you've considered.
+      label: Alternatives
+      description: What are the alternative solutions? A clear and concise description of any alternative solutions or features you've considered.
       placeholder: Choosing other approach wouldn't work, because ...
     validations:
       required: true
   - type: textarea
     id: context
     attributes:
-      label: Additional context.
+      label: Additional context
       description: Any other relevant information, screenshots or resources.
       placeholder: This would work only when ...
     validations:
@@ -36,8 +36,21 @@ body:
   - type: textarea
     id: risk
     attributes:
-      label: Are there any risks associated with this feature?
-      description: A clear and concise description of any risks associated with this feature.
+      label: Risks
+      description: Are there any risks asociated with this feature? A clear and concise description of any risks associated with this feature.
       placeholder: Data integrity is a risk, because ...
     validations:
       required: true
+  - type: textarea
+    id: subtasks
+    attributes:
+      label: Tasks
+      description: Should this feature be split into subtasks? After issue creation, these subtasks can easily be turned into subsequent issues by hovering over them.
+      render: markdown
+      placeholder: |
+        - [ ] Subtask 1
+        - [ ] Subtask 2
+        - [ ] Subtask 3
+        ...
+    validations:
+      required: false
