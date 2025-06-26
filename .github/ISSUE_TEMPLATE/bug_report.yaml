@@ -3,31 +3,23 @@ description: Report bugs
 labels: ['bug']
 body:
   - type: textarea
-    id: description
-    attributes:
-      label: Bug description
-      description: A clear and concise description of what the bug is.
-      placeholder: I observed the following...
-    validations:
-      required: true
-  - type: textarea
-    id: expected
-    attributes:
-      label: What is the expected behavior?
-      description: A clear and concise description of the expected behavior.
-      placeholder: I expected it to...
-    validations:
-      required: true
-  - type: textarea
     id: steps
     attributes:
-      label: 'Steps to reproduce:'
-      description: Exact steps to reproduce the behaviour, if applicable include screenshots to help explain the issue.
+      label: Observed behavior
+      description: A clear description of the expected behavior. Steps to reproducde, logs, etc.
       value: |
         1. Step
         2. Step
         3. Step
         ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: A clear description of the expected behavior.
+      placeholder: I expected it to...
     validations:
       required: true
   - type: input
@@ -44,15 +36,6 @@ body:
       label: 'Platform:'
       description: Platform on which this behaviour was observed.
       placeholder: Windows XP
-    validations:
-      required: false
-  - type: textarea
-    id: debug_logs
-    attributes:
-      label: Build or installation Logs.
-      description: Build or installation log goes here, should contain the backtrace, as well as the reset source if it is a crash.
-      placeholder: Your log goes here.
-      render: plain
     validations:
       required: false
   - type: textarea
